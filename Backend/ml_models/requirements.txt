@@ -1,1 +1,8 @@
 
+fastapi
+uvicorn
+numpy
+joblib
+tensorflow
+pillow
+python-multipart
