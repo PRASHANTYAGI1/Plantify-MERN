@@ -29,7 +29,7 @@ app.use(cookieParser());
 // Enable CORS for frontend
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: "https://plantify-web-ml1.netlify.app/" || "http://localhost:5173",
     credentials: true,
   })
 );
