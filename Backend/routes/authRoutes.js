@@ -10,7 +10,7 @@ import {
 } from "../controllers/authController.js";
 
 import { protect, adminOnly } from "../middlewares/authMiddleware.js";
-import uploadDisk from "../middlewares/upload/multerDisk.js";
+import uploadDisk from "../middlewares/upload/multerDisk.js"; // ✅ FIXED
 
 const router = express.Router();
 
@@ -20,7 +20,12 @@ router.post("/login", loginUser);
 
 // SELF PROFILE
 router.get("/me", protect, getMe);
-router.put("/update", protect, uploadDisk.single("profileImage"), updateUserProfile);
+router.put(
+  "/update",
+  protect,
+  uploadDisk.single("profileImage"),
+  updateUserProfile
+);
 
 // USER ACCOUNT DELETION
 router.delete("/delete-request", protect, requestAccountDeletion);
