@@ -1,6 +1,7 @@
 import express from "express";
 import { protect } from "../middlewares/authMiddleware.js";
-import { uploadDisk } from "../middlewares/upload/multerDisk.js";
+import uploadDisk from "../middlewares/upload/multerDisk.js";
+
 
 import {
   addProduct,
