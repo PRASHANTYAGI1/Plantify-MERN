@@ -5,7 +5,7 @@ import uploadDisk from "../middlewares/upload/multerDisk.js";
 
 import {
   addProduct,
-  updateProduct,
+  updateProduct, 
   getAllProducts,
   getSingleProduct,
   deleteProduct,
