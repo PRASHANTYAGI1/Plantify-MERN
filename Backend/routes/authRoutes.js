@@ -10,7 +10,7 @@ import {
 } from "../controllers/authController.js";
 
 import { protect, adminOnly } from "../middlewares/authMiddleware.js";
-import { uploadDisk } from "../middlewares/upload/multerDisk.js";
+import uploadDisk from "../middlewares/upload/multerDisk.js";
 
 const router = express.Router();
 
